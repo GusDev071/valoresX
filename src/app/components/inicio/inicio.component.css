@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* cabezera */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    max-height: 100px;
+}
+
+.logo-tec img {
+    max-height: 150px;
+}
+
+
+/* banner */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -150px;
+}
+
+.banner_title h2 {
+    color: #9e1f47;
+    font-size: 60px;
+    font-weight: 800;
+    margin-right: 200px;
+}
+
+.banner_title span {
+    position: relative;
+}
+
+.banner_title span::before {
+    content: "valores";
+    color: black;
+    animation: words 20s infinite;
+}
+
+.banner_tittle span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid black;
+    right: -8px;
+    animation: cursor .8s infinite, typing 30s steps(15) infinite;
+}
+
+.botones {
+    margin-top: 30px;
+}
+
+.botones a {
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botones a:hover {
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.58);
+    scale: 1.05;
+}
+
+#uno {
+    background-color: #b99768;
+    border-radius: 10px;
+}
+
+#dos {
+    background-color: #9e1f47;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.banner_img {
+    animation: movimiento 2.5s linear infinite;
+}
+
+.banner_img img {
+    width: 400px;
+    display: block;
+}
+
+
+/* Animaciones */
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid blue;
+    }
+}
+
+@keyframes words {
+    0%,
+    20% {
+        content: "valores";
+    }
+    21%,
+    40% {
+        content: "respeto";
+    }
+    41%,
+    60% {
+        content: "honestidad";
+    }
+    61%,
+    80% {
+        content: "responsabilidad";
+    }
+    81%,
+    100% {
+        content: "humildad";
+    }
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}

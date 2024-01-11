@@ -1,0 +1,51 @@
+<header class="cabezera">
+    <div class="logo-edo">
+        <img src="assets/img/2560px-SEP_Logo_2019.svg.png" alt="">
+    </div>
+    <div class="logo-tec">
+        <img src="assets/img/LOGO-VERTICAL-TECNM.png" alt="">
+    </div>
+    <div class="logo-tescha">
+        <img src="assets/img/teschalogo.png" alt="">
+    </div>
+</header>
+
+<body>
+    <div class="cartas">
+        <mat-card class="img1">
+            <h1>Conoce mas valores</h1>
+
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="assets/images/ciencia-de-los-datos.png" alt=""></li>
+                    <li><img src="assets/images/circuito-electrico.png" alt=""></li>
+                    <li><img src="assets/images/desarrollador.png" alt=""></li>
+                    <li><img src="assets/images/industrial.png" alt=""></li>
+                    <li><img src="assets/images/ingenieria.png" alt=""></li>
+                    <li><img src="assets/images/presupuesto.png" alt=""></li>
+                </ul>
+            </div>
+        </mat-card>
+
+
+        <mat-card class="cuerpo">
+            <h1>Inicia sesion</h1>
+            <form class="login">
+                <p>Correo institucional:</p>
+                <div class="input-box">
+                    <input type="email" placeholder="ejemplo@tesch.edu.mx" required>
+                </div>
+                <p>Contraseña:</p>
+                <div class="input-box">
+                    <input type="password" placeholder="Inserta tu contraseña" formControlName="password">
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Mantener sesion</label>
+                    <a href="rpassword/">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit" value="enviar"><a href="/dashboard">Iniciar sesion</a></button>
+                <button class="btn-dos"><a href="/inicio" class="re">Regresar</a></button>
+            </form>
+        </mat-card>
+    </div>
+</body>
