@@ -44,3 +44,10 @@ span {
         color: black;
     }
 }
+
+app-navbar {
+    position: relative;
+    /* o absolute, fixed, sticky */
+    z-index: 1000;
+    /* cualquier número alto */
+}

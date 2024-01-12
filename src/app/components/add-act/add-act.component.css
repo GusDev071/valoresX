@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+.text-danger {
+    text-align: start;
+    margin-left: 7px;
+    font-size: 10px;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+.card {
+    .card-body {
+        background-color: #E6E6FA;
+        border-radius: 10px;
+        border: 2px solid #b99768;
+    }
+}
+
+app-navbar {
+    position: relative;
+    /* o absolute, fixed, sticky */
+    z-index: 1000;
+    /* cualquier número alto */
+}

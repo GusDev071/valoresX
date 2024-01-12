@@ -41,6 +41,7 @@ header img {
 
 .banner_title span {
     position: relative;
+    margin-top: 15px;
 }
 
 .banner_title span::before {

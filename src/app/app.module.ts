@@ -13,6 +13,15 @@ import { ActividadesComponent } from './components/actividades/actividades.compo
 import { LibrosComponent } from './components/libros/libros.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {MatCardModule} from '@angular/material/card';
+import { IniAComponent } from './components/ini-a/ini-a.component';
+import { LibrosAComponent } from './components/libros-a/libros-a.component';
+import { ActAComponent } from './components/act-a/act-a.component';
+import { NavbarAComponent } from './components/navbar-a/navbar-a.component';
+import { DashboardAComponent } from './components/dashboard-a/dashboard-a.component';
+import { ContactoAComponent } from './components/contacto-a/contacto-a.component';
+import { AyudaAComponent } from './components/ayuda-a/ayuda-a.component';
+import { AddlibroComponent } from './components/addlibro/addlibro.component';
+import { AddActComponent } from './components/add-act/add-act.component';
 
 
 @NgModule({
@@ -26,6 +35,15 @@ import {MatCardModule} from '@angular/material/card';
     ActividadesComponent,
     LibrosComponent,
     NavbarComponent,
+    IniAComponent,
+    LibrosAComponent,
+    ActAComponent,
+    NavbarAComponent,
+    DashboardAComponent,
+    ContactoAComponent,
+    AyudaAComponent,
+    AddlibroComponent,
+    AddActComponent,
     
     
   ],
