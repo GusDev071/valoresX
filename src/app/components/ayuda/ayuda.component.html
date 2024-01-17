@@ -1,1 +1,92 @@
 <app-navbar></app-navbar>
+
+<script>
+    const inputs = document.querySelectorAll(".input");
+
+    function focusFunc() {
+        let parent = this.parentNode;
+        parent.classList.add("focus");
+    }
+
+    function blurFunc() {
+        let parent = this.parentNode;
+        if (this.value == "") {
+            parent.classList.remove("focus");
+        }
+    }
+
+    inputs.forEach((input) => {
+        input.addEventListener("focus", focusFunc);
+        input.addEventListener("blur", blurFunc);
+    });
+</script>
+
+<body>
+    <div class="container">
+        <!-- <span class="big-circle"></span> -->
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Ayuda psicologíca</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum adipisci recusandae praesentium dicta!
+                </p>
+
+                <div class="info">
+                    <!-- <div class="information">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p>92 Cherry Drive Uniondale, NY 11553</p>
+                    </div> -->
+                    <div class="information">
+                        <img src="assets/img/envelope-fill.svg" class="icon" alt="" />
+                        <p>psicologia@tesch.edu.mx</p>
+                    </div>
+                    <div class="information">
+                        <img src="assets/img/phone-fill.svg" class="icon" alt="" />
+                        <p>Teléfono: 55 59 82 10 88 y 55 59 82 10 89 Ext. 1125</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Contactanos :</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/5621789131?text=Hola+quiero+informaci%C3%B3n+sobre+el+area+de+psicolog%C3%ADa%F0%9F%91%8B">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <!--  <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">Contacto</h3>
+                    <div class="input-container">
+                        <input type="text" name="nombre" class="input" placeholder="Nombre" />
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" placeholder="Correo institucional" />
+                    </div>
+                    <div class="input-container">
+                        <input type="number" name="matricula" class="input" placeholder="Matricula" />
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="mensaje" class="input" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
